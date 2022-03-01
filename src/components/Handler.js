@@ -12,6 +12,7 @@ const Handler = () => {
     const [color, setColor] = useState(colors[colorRandom])
 
     const changeQuote = () =>{
+        const quoteRandom = Math.floor(Math.random() * Quote.length)
         setQuote(Quote[quoteRandom])
         setColor(colors[colorRandom])
     }
